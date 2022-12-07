@@ -1019,3 +1019,40 @@ animation: 2s breath infinite;
 	}
 
 }
+.upload-container{
+	position: relative;
+	cursor: pointer;
+}
+.upload-button{
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+.upload-button .upload{
+	border-radius: 100%;
+	width: 100px;
+	height: 100px;
+	overflow: hidden;
+}
+.upload-img:hover{
+	cursor: pointer;
+}
+.upload-button .upload{
+	opacity: 80%;
+	transition: margin 0.1s ease-in;
+}
+.upload-img:hover + .upload-button .upload,.upload-button:hover .upload {
+    opacity: 100%;
+	margin-bottom: 10px;
+	
+}
+.download{
+	opacity: 0;
+	background-color: #4CAF50;
+	border-radius: 10px;
+}
